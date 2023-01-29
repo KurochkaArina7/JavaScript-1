@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="myFunction ()">Нажми на меня, please!</button>
+        <p id="demo">Виталий Валентинович</p>
+        <script>
+            let name="Виталий Валентинович";
+            let admin="Арина Александровна";
+            alert("Виталий Валентинович");
+//объявляем функцию, которую будет вызывать кнопка по методу onclick
+function myFunction ()
+            {
+document.write(admin + name);
+                /*
+                document.getElementById - метод объекта document. Он возвращает ссылку на узел документа, 
+                которую можно использовать для изменения свойств и обращения к методам узла.
+                */
+               //метод getElementById, получающий данные из тега по метке demo
+               //Свойство innerHTML устанавливает или получает всю разметку
+               // и содержание внутри данного элемента.
+               document.getElementById("demo").innerHTML=document.write;
+            }
+        </script>
+    </body>
+</html>
